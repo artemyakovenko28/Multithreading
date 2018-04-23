@@ -5,12 +5,12 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Main {
-    static int pot = 0;
-    static int capacity = 10;
-    static int beesAmount = 10;
-    static final Lock lock = new ReentrantLock();
-    static final Condition bear = lock.newCondition();
-    static final Condition bees = lock.newCondition();
+    private static int pot = 0;
+    private static int capacity = 10;
+    private static final int BEES_AMOUNT = 10;
+    private static final Lock lock = new ReentrantLock();
+    private static final Condition bear = lock.newCondition();
+    private static final Condition bees = lock.newCondition();
 
     static class Bee implements Runnable {
 
@@ -61,7 +61,7 @@ public class Main {
 
     public static void main(String[] args) {
         new Thread(new Bear()).start();
-        for (int k = 0; k < beesAmount; k++) {
+        for (int k = 0; k < BEES_AMOUNT; k++) {
             new Thread(new Bee()).start();
         }
     }
