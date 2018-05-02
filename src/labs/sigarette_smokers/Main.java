@@ -1,4 +1,4 @@
-package veres_labs.lab3c;
+package labs.sigarette_smokers;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

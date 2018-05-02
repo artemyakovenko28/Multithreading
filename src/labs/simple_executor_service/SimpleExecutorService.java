@@ -3,6 +3,7 @@ package labs.simple_executor_service;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ExecutorService;
 
 public class SimpleExecutorService {
 

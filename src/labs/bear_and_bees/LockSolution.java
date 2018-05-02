@@ -1,10 +1,10 @@
-package veres_labs.lab3a;
+package labs.bear_and_bees;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Main {
+public class LockSolution {
     private static int pot = 0;
     private static int capacity = 10;
     private static final int BEES_AMOUNT = 10;

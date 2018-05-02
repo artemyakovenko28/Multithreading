@@ -1,10 +1,10 @@
-package veres_labs.lab3b;
+package labs.hairdresser;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Main {
+public class HairdresserTask {
     static boolean free = true;
     static Client sheared = null;
     static Lock lock = new ReentrantLock(true);

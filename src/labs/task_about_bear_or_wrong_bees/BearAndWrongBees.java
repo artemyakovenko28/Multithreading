@@ -1,10 +1,10 @@
-package veres_labs.lab2a;
+package labs.task_about_bear_or_wrong_bees;
 
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class Main {
+public class BearAndWrongBees {
     static int N = 10;
     static int M = 10;
     static int forest[][] = new int[N][M];

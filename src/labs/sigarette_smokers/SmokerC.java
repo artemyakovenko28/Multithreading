@@ -1,6 +1,6 @@
-package veres_labs.lab3c;
+package labs.sigarette_smokers;
 
-import static veres_labs.lab3c.Main.*;
+import static labs.sigarette_smokers.Main.*;
 
 public class SmokerC implements Runnable {
     @Override

@@ -1,4 +1,4 @@
-package veres_labs.lab3a;
+package labs.bear_and_bees;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -11,7 +11,7 @@ public class AtomicSolution {
     private static AtomicInteger pot = new AtomicInteger(0);
     private static volatile int notSafePot = 0;
 
-    private void go(ExecutorService executor) {
+    private void start(ExecutorService executor) {
         Runnable bee = () -> {
             while (true) {
                 while (true) {
@@ -47,6 +47,6 @@ public class AtomicSolution {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        new AtomicSolution().go(Executors.newFixedThreadPool(BEES_AMOUNT + 1));
+        new AtomicSolution().start(Executors.newFixedThreadPool(BEES_AMOUNT + 1));
     }
 }

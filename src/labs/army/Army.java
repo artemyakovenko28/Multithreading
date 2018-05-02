@@ -1,10 +1,10 @@
-package veres_labs.lab2b;
+package labs.army;
 
 import java.util.Random;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
-public class Main {
+public class Army {
     static BlockingQueue<Integer> stock = new ArrayBlockingQueue<Integer>(5);
     static BlockingQueue<Integer> lorry = new ArrayBlockingQueue<Integer>(5);
     static Random rnd = new Random();

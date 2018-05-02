@@ -1,8 +1,8 @@
-package veres_labs.lab3c;
+package labs.sigarette_smokers;
 
 import java.util.Random;
 
-import static veres_labs.lab3c.Main.*;
+import static labs.sigarette_smokers.Main.*;
 
 public class Pusher implements Runnable {
     private Random rnd = new Random();
