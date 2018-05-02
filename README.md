@@ -1,4 +1,6 @@
 # Multithreading
+Viewed such topics as Java memory model, monitor, synchronized, java.util.concurrent, ReentrantLock,
+BlockingQueue, ConcurrentHashMap, atomics, Runnable, Callable, Future, ThreadPoolExecutor, streams, lambdas.
 ## Tasks
 ### Первая задача о Винни-Пухе или неправильные пчелы
 `src\labs\task_about_bear_or_wrong_bees\BearAndWrongBees.java`<br>
@@ -17,6 +19,7 @@
 подсчитывает рыночную стоимость добычи. Требуется составить многопоточное приложение, моделирующее
 деятельность прапорщиков. При решении использовать парадигму «производитель-потребитель» с активным ожиданием.
 ### Задача о Винни-Пухе или правильные пчелы
+`src\labs\bear_and_bees`<br>
 В одном лесу живут n пчел и один медведь, которые используют один горшок меда, вместимостью N глотков.
 Сначала горшок пустой. Пока горшок не наполнится, медведь спит. Как только горшок заполняется,
 медведь просыпается и съедает весь мед, после чего снова засыпает. Каждая пчела многократно собирает
