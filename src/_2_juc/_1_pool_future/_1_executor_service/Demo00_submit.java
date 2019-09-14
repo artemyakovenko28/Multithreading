@@ -9,7 +9,7 @@ public class Demo00_submit {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         ExecutorService execService = Executors.newCachedThreadPool();
 
-        Callable<Integer> task0 = new Callable<>() {
+        Callable<Integer> task0 = new Callable<Integer>() {
             @Override
             public Integer call() {
                 return 42;
@@ -17,7 +17,7 @@ public class Demo00_submit {
         };
         Future<Integer> future0 = execService.submit(task0);
 
-        Callable<Integer> task1 = new Callable<>() {
+        Callable<Integer> task1 = new Callable<Integer>() {
             @Override
             public Integer call() {
                 while (true) { /* infinity loop */
